@@ -16,9 +16,9 @@
 | **百度**   | 第三方 |
 | **必应**        | [官方](https://www.bing.com/toolbox/bingbot.json) |
 | **字节跳动**     | 第三方 |
-| **DuckDuck**    | [官方](https://duckduckgo.com/duckduckgo-help-pages/results/duckduckbot) |
+| **DuckDuckGo**    | [官方](https://duckduckgo.com/duckduckgo-help-pages/results/duckduckbot) |
 | **Google**      | [官方](https://developers.google.com/search/apis/ipranges/googlebot.json)|
-| **神马搜索**  | [第三方]|
+| **神马搜索**  | 第三方|
 | **搜狗搜索**   | 第三方 |
 | **Yandex**     | [官方](https://yandex.com/ips)|
 
