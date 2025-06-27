@@ -1,0 +1,31 @@
+name: Update USTC Black IP List
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 每天 UTC 时间 2 点（北京时间 10 点）执行一次
+  workflow_dispatch:      # 支持手动触发
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download black IP list from USTC
+        run: |
+          curl -s https://blackip.ustc.edu.cn/list.php?txt -o black_ips/ustc.txt
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [[ `git status --porcelain` ]]; then
+            git add black_ips/ustc.txt
+            git commit -m "Update ustc.txt from blackip.ustc.edu.cn"
+            git push
+          else
+            echo "No changes to commit"
+          fi

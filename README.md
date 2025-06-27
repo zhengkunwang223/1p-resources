@@ -1,6 +1,6 @@
 # 1p-resources
 
-**1p-resources** 是一个面向安全运营与网络资源管理的开源数据仓库，旨在收集和整理常用的网络资源信息，目前主要聚焦于 IP 情报数据。
+**1p-resources** 1Panel 面板用到或参考的一些资源。
 
 ## 📁 目录结构
 
@@ -18,10 +18,18 @@
 | **字节跳动**     | 第三方 |
 | **DuckDuck**    | [官方](https://duckduckgo.com/duckduckgo-help-pages/results/duckduckbot) |
 | **Google**      | [官方](https://developers.google.com/search/apis/ipranges/googlebot.json)|
-| **神马搜索**  | [第三方](https://www.ab173.com/gongju/doc/smspiderips.php)|
+| **神马搜索**  | [第三方]|
 | **搜狗搜索**   | 第三方 |
 | **Yandex**     | [官方](https://yandex.com/ips)|
 
+
+### `black_ips/`
+
+一些常用的黑名单库
+
+| 名称      | 数据来源 |
+|---------------|----------|
+| **中科大黑名单**   | https://blackip.ustc.edu.cn/list.php?txt (每日更新) |
 
 ---
 
